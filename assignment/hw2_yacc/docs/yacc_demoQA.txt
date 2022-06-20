@@ -1,0 +1,38 @@
+Demo/
+1.pas CORRECT
+
+2.pas ERROR
+	main.pas(6,8) Error: Identifier not found "j"
+	main.pas(7,8) Error: Incompatible types: got "Constant String" expected "SmallInt"
+	main.pas(9,4) Fatal: There were 2 errors compiling module, stopping
+
+3.pas ERROR
+	main.pas(7,13) Fatal: Syntax error, ")" expected but "THEN" found
+
+4.pas ERROR
+	main.pas(4,1) Fatal: Syntax error, ";" expected but "BEGIN" found
+
+5.pas ERROR
+	main.pas(8,6) Error: Illegal expression
+	main.pas(8,4) Error: Operator is not overloaded: "SmallInt" + "ShortString"
+	main.pas(9,4) Fatal: There were 2 errors compiling module, stopping
+
+
+
+correct_error/
+error1.pas
+	main.pas(5,8) Error: Illegal expression
+	main.pas(5,3) Warning: Variable "i" does not seem to be initialized
+	main.pas(6,3) Error: Identifier not found "j"
+	main.pas(6,8) Error: Illegal expression
+	main.pas(7,11) Error: Identifier not found "j"
+
+error2.pas CORRECT
+
+Error3.pas
+	main.pas(3,8) Fatal: Syntax error, ":" expected but ":=" found
+
+Error4.pas
+	main.pas(8,10) Error: Illegal expression
+	main.pas(8,8) Error: Operator is not overloaded: "SmallInt" + "ShortString"
+
